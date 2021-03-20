@@ -1,0 +1,27 @@
+<!DOCTYPEhtml>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Hey Dane it's a webpage</title>
+</head>
+
+<body>
+
+<button id="clickme"> Click here for a free cat! </button>
+
+</body>
+
+<script>
+	var buttonEl = document.getElementById("clickme")
+	var content = document.createElement("img")
+	content.src = "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.hdnicewallpapers.com%2FWalls%2FBig%2FCat%2FBeautiful_Angry_Kitten.jpg&f=1&nofb=1"
+	content.style.width = "400px"	
+
+	var onButtonClick = function() {
+		document.body.appendChild(content)
+}
+	buttonEl.addEventListener("click", onButtonClick);
+
+</script>
+
+</html>
